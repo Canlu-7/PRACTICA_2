@@ -1,0 +1,124 @@
+:root{
+    --color1:#1622a6;
+    --color2:#b2cdff;
+    --color3:#9af2fd;
+    --color4:#ffa9c0;
+    --color5:#5f56fc;
+    --color6:#5a99ff;
+    --color7:#f09cffce;
+}
+/* Estilos generales */
+body {
+    font-family:'Times New Roman', Times, serif
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: var(--color6);
+    color: var(--color1);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-left {
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right ul,
+  .footer-nav ul,
+  .social-nav ul {
+    background-color: var(--color5);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .header-right li,
+  .footer-nav li,
+  .social-nav li {
+    
+    margin-right: 20px;
+  }
+  
+  .header-right a,
+  .footer-nav a,
+  .social-nav a {
+    color: var(--color3);
+    text-decoration: none;
+  }
+  
+  .profile-picture img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos del contenido principal */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .hero {
+    background-color: var(--color4);
+    padding: 20px;
+    flex: 2;
+  }
+  
+  aside {
+    background-color: var(--color2);
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .widget {
+    background-color: var(--color5);
+    color: var(--color3);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: var(--color7);
+    color: var(--color4);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Estilos responsive */
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-left,
+    .header-right {
+      margin-bottom: 10px;
+    }
+  
+    .header-right ul,
+    .footer-nav ul,
+    .social-nav ul {
+      flex-wrap: wrap;
+    }
+  
+    main {
+      flex-direction: column;
+    }
+  
+    aside {
+      order: -1;
+    }
+  }
